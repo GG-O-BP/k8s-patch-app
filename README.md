@@ -22,9 +22,11 @@ cd release
 
 ## Notes
 -n is used to input the name of the deployment target.
+
 -p is used to input the json format for the k8s json patch.
 
 Please input the name of the deployment target for <deployment-name>.
+
 Please input the count of replicas to be changed for <new-replica-count>.
 
 ex) ./k8s-patch-app -n=test-deployment -p='[{\"op\": \"replace\", \"path\": \"/spec/replicas\", \"value\":3}]'
